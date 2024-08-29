@@ -1,0 +1,33 @@
+nav ul{
+    display: flex; /* Define a exibição do contêiner como um flexbox para organizar os itens em uma linha ou coluna */
+    flex-direction: row; /* Define a direção dos itens dentro do flexbox como uma linha horizontal */
+    margin: 0; /* Remove qualquer margem padrão ao redor da lista não ordenada */
+    padding: 0; /* Remove qualquer preenchimento padrão dentro da lista não ordenada */
+}
+
+nav ul li{
+    list-style: none; /* Remove os marcadores de lista (como bullets) dos itens da lista */
+    height: 125px; /* Define a altura de cada item da lista como 125 pixels */
+    padding: 0 25px 0 0; /* Adiciona um preenchimento à direita de 25 pixels em cada item da lista */
+}
+
+nav ul li:hover{
+    background: #444444; /* Muda o fundo do item da lista para um tom cinza escuro quando o mouse passa por cima (efeito hover) */
+}
+
+nav{
+    background-color: black; /* Define a cor de fundo da barra de navegação como preta */
+    height: 125px; /* Define a altura da barra de navegação como 125 pixels */
+    max-width: 1480px; /* Define uma largura máxima para a barra de navegação de 1480 pixels */
+    min-width: 1080px; /* Define uma largura mínima para a barra de navegação de 1080 pixels */
+}
+
+nav #logo img{
+    height: 75px; /* Define a altura da imagem do logo como 75 pixels */
+    float: left; /* Posiciona a imagem do logo à esquerda dentro do contêiner de navegação */
+    margin: 25px; /* Adiciona uma margem de 25 pixels ao redor da imagem do logo */
+}
+
+nav #mainMenu{
+    float: right; /* Posiciona o menu principal à direita dentro do contêiner de navegação */
+}
