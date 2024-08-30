@@ -1,33 +1,91 @@
-nav ul{
-    display: flex; /* Define a exibição do contêiner como um flexbox para organizar os itens em uma linha ou coluna */
-    flex-direction: row; /* Define a direção dos itens dentro do flexbox como uma linha horizontal */
-    margin: 0; /* Remove qualquer margem padrão ao redor da lista não ordenada */
-    padding: 0; /* Remove qualquer preenchimento padrão dentro da lista não ordenada */
+body {
+    margin: 0; /* Remove a margem padrão ao redor do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão ao redor do corpo da página */
+    width: 100%; /* Define a largura do corpo para 100% da largura da tela */
+    height: 600px; /* Define a altura do corpo para 600 pixels */
 }
 
-nav ul li{
-    list-style: none; /* Remove os marcadores de lista (como bullets) dos itens da lista */
-    height: 125px; /* Define a altura de cada item da lista como 125 pixels */
-    padding: 0 25px 0 0; /* Adiciona um preenchimento à direita de 25 pixels em cada item da lista */
+nav {
+    margin: 0 auto; /* Centraliza horizontalmente o menu de navegação */
+    position: absolute; /* Posiciona o menu de navegação de forma absoluta em relação ao contêiner pai */
+    top: 15px; /* Define a distância do topo da página */
+    width: 100%; /* Define a largura do menu de navegação para 100% da tela */
+    min-width: 1080px; /* Define a largura mínima do menu de navegação */
 }
 
-nav ul li:hover{
-    background: #444444; /* Muda o fundo do item da lista para um tom cinza escuro quando o mouse passa por cima (efeito hover) */
+nav #mainMenu-geral {
+    max-width: 1480px; /* Define a largura máxima do contêiner do menu de navegação */
+    height: 125px; /* Define a altura do contêiner do menu de navegação */
+    margin: 0 auto; /* Centraliza horizontalmente o contêiner do menu de navegação */
+    background-color: black; /* Define a cor de fundo do menu de navegação como preto */
 }
 
-nav{
-    background-color: black; /* Define a cor de fundo da barra de navegação como preta */
-    height: 125px; /* Define a altura da barra de navegação como 125 pixels */
-    max-width: 1480px; /* Define uma largura máxima para a barra de navegação de 1480 pixels */
-    min-width: 1080px; /* Define uma largura mínima para a barra de navegação de 1080 pixels */
+nav ul {
+    display: flex; /* Alinha os itens da lista em uma linha horizontal */
+    flex-direction: row; /* Define a direção dos itens como linha (horizontal) */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
 }
 
-nav #logo img{
-    height: 75px; /* Define a altura da imagem do logo como 75 pixels */
-    float: left; /* Posiciona a imagem do logo à esquerda dentro do contêiner de navegação */
-    margin: 25px; /* Adiciona uma margem de 25 pixels ao redor da imagem do logo */
+nav ul li {
+    list-style: none; /* Remove a marcação padrão dos itens da lista */
+    height: 125px; /* Define a altura dos itens da lista para coincidir com a altura do menu */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
 
-nav #mainMenu{
-    float: right; /* Posiciona o menu principal à direita dentro do contêiner de navegação */
+nav ul li:hover {
+    background-color: #444444; /* Muda a cor de fundo dos itens da lista ao passar o mouse */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
+}
+
+nav ul li span {
+    float: left; /* Alinha o texto do número do item à esquerda */
+    color: #868686; /* Define a cor do texto como cinza claro */
+    font-size: 11px; /* Define o tamanho da fonte do texto */
+    margin: 58px 3px 53px 15px; /* Define a margem ao redor do texto */
+}
+
+nav ul li a {
+    color: white; /* Define a cor do texto dos links como branco */
+    font-size: 16px; /* Define o tamanho da fonte dos links */
+    text-transform: uppercase; /* Transforma o texto dos links em maiúsculas */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 53px 15px 53px 0; /* Define o preenchimento interno dos links */
+    float: left; /* Alinha os links à esquerda dos itens da lista */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
+}
+
+nav ul li a:hover {
+    text-decoration: line-through; /* Adiciona um linha através do texto dos links ao passar o mouse */
+    color: yellow; /* Muda a cor do texto dos links para amarelo ao passar o mouse */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
+}
+
+nav ul li a span {
+    font-size: 11px; /* Define o tamanho da fonte do texto dentro do link */
+    color: #868686; /* Define a cor do texto como cinza claro */
+    margin: 5px 3px 0 0; /* Define a margem ao redor do texto */
+}
+
+nav #logo img {
+    height: 75px; /* Define a altura da imagem do logo */
+    margin: 25px; /* Adiciona margem ao redor da imagem do logo */
+    float: left; /* Alinha a imagem do logo à esquerda do contêiner do menu */
+}
+
+nav #mainMenu {
+    float: right; /* Alinha o menu principal à direita do contêiner de navegação */
+}
+
+.montserrat, nav ul li a {
+    font-family: "Montserrat", sans-serif; /* Define a fonte dos textos como Montserrat */
+    font-optical-sizing: auto; /* Ajusta o tamanho da fonte para melhorar a legibilidade */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    font-style: normal; /* Define o estilo da fonte como normal */
+}
+
+header img {
+    width: 100%; /* Define a largura da imagem para 100% da largura do contêiner */
+    height: 600px; /* Define a altura da imagem para 600 pixels */
+    object-fit: cover; /* Faz com que a imagem cubra a área do contêiner sem distorcer */
 }
