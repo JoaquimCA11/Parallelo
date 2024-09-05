@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Estabelece uma conexão antecipada com o domínio dos Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Estabelece uma conexão antecipada com o domínio dos Google Fonts com credenciais -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Importa a fonte Montserrat com diferentes pesos e estilos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!-- Importa os ícones Material Symbols -->
 </head>
 <body>
 
@@ -53,9 +54,14 @@
     </nav> <!-- Fim do elemento de navegação (nav) -->
     
     <header> <!-- Início do cabeçalho da página -->
-        <img src="img/project-1.jpg" width="100%" alt="Imagem de Cabeçalho"> <!-- Imagem de fundo para o cabeçalho, ocupando 100% da largura da tela -->
+        <img class="slide" src="img/slides/slidebg1.jpg" width="100%" alt="Imagem de Cabeçalho"> <!-- Imagem de fundo para o cabeçalho, ocupando 100% da largura da tela -->
         <div id="slide-bar"> <!-- Contêiner para a barra de slides -->
+            <div id="txt_slide">
+                Projeto 
+            </div>
+            <div id="titulo_slide">
             <h4>Lean Production</h4> <!-- Título ou legenda para o slide -->
+            </div>
             <div class="seta esquerda"> <!-- Botão para navegar para a esquerda -->
                 <a href="#">
                     <img src="img/slides/arrow-left.png" alt="Seta Esquerda"> <!-- Imagem da seta para a esquerda com texto alternativo -->
@@ -68,6 +74,16 @@
             </div>
         </div>
     </header>
-    
+    <div class="separador"> <!-- Div para o separador visual -->
+
+    </div>
+    <div id="frase"> <!-- Início do bloco de frases com ícones -->
+        <div class="icons"> <!-- Contêiner para os ícones -->
+        <span class="material-symbols-outlined">construction</span> <!-- Ícone de construção -->
+        <span class="material-symbols-outlined">architecture</span> <!-- Ícone de arquitetura -->
+        <span class="material-symbols-outlined">content_cut</span> <!-- Ícone de corte de conteúdo -->
+        </div>
+        <p>"A arquitetura é a arte que determina a identidade do nosso tempo e<br>melhora a vida das pessoas." Santiago Calatrava</p> <!-- Frase inspiradora -->
+    </div>
 </body>
 </html>

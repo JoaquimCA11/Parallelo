@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: line-through; /* Adiciona um linha através do texto dos links ao passar o mouse */
+    text-decoration: line-through; /* Adiciona uma linha através do texto dos links ao passar o mouse */
     color: yellow; /* Muda a cor do texto dos links para amarelo ao passar o mouse */
     transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
@@ -84,8 +84,84 @@ nav #mainMenu {
     font-style: normal; /* Define o estilo da fonte como normal */
 }
 
-header img {
+header {
+    width: 100%; /* Define a largura do cabeçalho para 100% da largura da tela */
+    height: 600px; /* Define a altura do cabeçalho para 600 pixels */
+}
+
+header .slide {
     width: 100%; /* Define a largura da imagem para 100% da largura do contêiner */
     height: 600px; /* Define a altura da imagem para 600 pixels */
     object-fit: cover; /* Faz com que a imagem cubra a área do contêiner sem distorcer */
+    position: absolute; /* Posiciona a imagem de forma absoluta dentro do cabeçalho */
+    z-index: -1; /* Coloca a imagem atrás dos outros elementos do cabeçalho */
+}
+
+header #slide-bar {
+    margin-top: 320px; /* Define a margem superior para posicionar o slide-bar verticalmente */
+    min-height: 280px; /* Define a altura mínima do slide-bar */
+    float: left; /* Alinha o slide-bar à esquerda */
+    background-image: url(../img/slides/yellow-bg.png); /* Define a imagem de fundo do slide-bar */
+    width: 625px; /* Define a largura do slide-bar */
+    padding: 0 0 0 60px; /* Define o preenchimento interno do slide-bar */
+}
+
+header #txt_slide {
+    font-family: "Montserrat", sans-serif; /* Define a fonte do texto do slide como Montserrat */
+    font-size: 14px; /* Define o tamanho da fonte do texto */
+    margin-top: 50px; /* Adiciona uma margem superior ao texto do slide */
+    color: white; /* Define a cor do texto como branco */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+header #titulo_slide {
+    font-size: 50px; /* Define o tamanho da fonte do título do slide */
+    color: white; /* Define a cor do título como branco */
+    font-family: "Montserrat", sans-serif; /* Define a fonte do título como Montserrat */
+}
+
+header #titulo_slide h4 {
+    margin: 30px 0; /* Define a margem ao redor do título dentro do slide */
+}
+
+header .seta {
+    float: left; /* Alinha as setas de navegação à esquerda */
+}
+
+header .direita {
+    margin-left: 20px; /* Adiciona margem à esquerda da seta direita */
+}
+
+.separador {
+    width: 100%; /* Define a largura do separador para 100% da largura da tela */
+    height: 300px; /* Define a altura do separador para 300 pixels */
+    background-image: url(../img/divider-dark.png); /* Define a imagem de fundo do separador */
+    background-repeat: repeat-x; /* Faz com que a imagem de fundo se repita horizontalmente */
+}
+
+#frase {
+    display: flex; /* Organiza o conteúdo em linha ou coluna */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 300px; /* Define a altura do bloco de frase para 300 pixels */
+}
+
+#frase .icons {
+    display: flex; /* Organiza os ícones em linha horizontal */
+    margin-bottom: 10px; /* Adiciona espaço entre os ícones e o texto */
+}
+
+#frase .icons span {
+    font-size: 120px; /* Aumenta o tamanho dos ícones */
+    color: #e7a920; /* Muda a cor dos ícones para amarelo */
+    margin: 0 10px; /* Adiciona espaço entre os ícones */
+}
+
+#frase p {
+    font-size: 28px; /* Define o tamanho da fonte do texto da frase */
+    font-weight: 300; /* Define o peso da fonte como leve */
+    color: black; /* Define a cor do texto como preto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-family: "Montserrat", sans-serif; /* Define a fonte do texto como Montserrat */
 }
